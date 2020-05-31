@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngAmazon"
+    }
+  },
+  "defaultProject": "ngAmazon",
+  "cli": {
+    "analytics": false
+  }
 }
