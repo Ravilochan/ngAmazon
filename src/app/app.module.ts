@@ -17,6 +17,8 @@ import { DataService } from './data.service';
 import { AuthGuardService } from './auth-guard.service';
 import { ProfileComponent } from './profile/profile.component';
 import { SettingsComponent } from './settings/settings.component';
+import { AddressComponent } from './address/address.component';
+import { PhoneComponent } from './phone/phone.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { SettingsComponent } from './settings/settings.component';
     LoginComponent,
     ProfileComponent,
     SettingsComponent,
+    AddressComponent,
+    PhoneComponent,
   ],
   imports: [
     BrowserModule,

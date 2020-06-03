@@ -9,9 +9,14 @@
     </div>
     <div *ngIf="data.user" class="row mt-5">
       <div class="col-md-3">
-        <img
+        <!-- <img
           [src]="data.user.picture"
-          alt="userimage"
+          alt="User Image"
+          class="rounded-circle image"
+        /> -->
+        <img
+          src="https://www.venmond.com/demo/vendroid/img/avatar/big.jpg"
+          alt="User Image"
           class="rounded-circle image"
         />
       </div>
@@ -22,6 +27,9 @@
         <br />
         <a routerLink="/profile/settings" class="btn btn-warning"
           >Change Account Settings</a
+        ><br /><br />
+        <a routerLink="/profile/phone" class="btn btn-warning"
+          >Change Phone Details</a
         >
         <br />
         <br />
