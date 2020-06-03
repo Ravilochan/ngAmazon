@@ -1,0 +1,85 @@
+<section id="registrationPage">
+  <div class="container p-2">
+    <div class="row mt-5">
+      <div class="col-lg-6 offset-lg-3">
+        <app-message></app-message>
+        <div class="card bg-light">
+          <div class="card-body">
+            <h4 class="text-center">Register</h4>
+            <hr />
+            <form>
+              <div class="form-group">
+                <label class="form-control-label">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  [(ngModel)]="name"
+                  placeholder="Your Name "
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-control-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  [(ngModel)]="email"
+                  placeholder="Email for Buying, Selling, Confirmations, Alters, Delivery, Contact etc"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-control-label">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  [(ngModel)]="password"
+                  placeholder="Enter your Password"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-control-label">Confirm Password</label>
+                <input
+                  type="password"
+                  name="password1"
+                  class="form-control"
+                  [(ngModel)]="password1"
+                  placeholder="Re-Type your Confirmed Password"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-control-label">
+                  <input
+                    type="checkbox"
+                    name="isSeller"
+                    class="form-check-control mr-3"
+                    [(ngModel)]="isSeller"
+                  />Register as Seller
+                </label>
+              </div>
+              <hr />
+              <button
+                type="button"
+                class="btn btn-warning btn-block"
+                (click)="register()"
+                [disabled]="btnDisabled"
+              >
+                Register
+              </button>
+            </form>
+            <hr />
+            <button
+              type="button"
+              class="btn btn-success btn-block"
+              *ngIf="token"
+              routerLink="/"
+            >
+              Return to Home
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

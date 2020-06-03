@@ -52,6 +52,7 @@
           <a class="nav-link dropdown-toggle mr-1" ngbDropdownToggle>
             <i class="fa fa-user mr-2"></i>
             <span *ngIf="!token" class="mr-1">Accounts</span>
+            <span *ngIf="data.user">{{ data.user.name }}</span>
           </a>
           <div ngbDropdownMenu class="dropdown-menu">
             <a
